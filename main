@@ -1,0 +1,30 @@
+import turtle
+trl = turtle.Turtle()
+trl.speed("fastest")
+turtle.bgcolor("white")
+trl.pensize(10)
+num_squares = 40
+size_increase = 8
+colors = ["Black", "Pink"]
+for i in range(num_squares):
+ size = 50 + i * size_increase
+ trl.color(colors[i % len(colors)])
+ trl.penup()
+ trl.goto(-size / 2, -size / 2)
+ trl.pendown()
+ for _ in range(4):
+   trl.forward(size)
+   trl.left(90)
+trl.hideturtle()
+turtle.done()
+#Code Summary: The Code above uses turtle to create concentric squares!
+#Line 01 - 05 was used to import, define, and create specific actions
+#Line 06 is just a small List used to make the color of the squares
+#Line 07 & 08 is used to make the variables into specific values
+#Line 09 - 14: A Loop that Increases Size of the Square and Loops from 09 - 17.
+#Line 15 - 17 Includes function to make the square
+#Line 18 & 19 Hides turtle and finishes the assignment!
+
+
+#Supported[Chat-Gpt]: Lines 09 - 14
+#Supported[Arshaan]: Lines 11 - 17
